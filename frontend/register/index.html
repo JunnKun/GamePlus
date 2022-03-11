@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>GamePlus</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="../img/GP_logo.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../mbd/css/mdb.min.css" />
+    <!-- MYSTYLE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "iflog('./backend.php')">
+    <!-- Start your project here-->
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex align-items-center justify-content-center h-100">
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    <img src="../img/GP_logo.png" class="img-fluid" alt="Phone image">
+                </div>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                    <div class="col-md-12 mb-4">
+                        <h3 class="text-center heading">Sign Up</h3>
+                    </div>
+                    <form method="POST" action="https://shinon.altervista.org/MyProject/register.php">
+                        <!-- Display Name input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="username" name="username" class="form-control form-control-lg" required/>
+                            <label class="form-label" for="form1Example13">Display name</label>
+                        </div>
+                        
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="email" name="email" class="form-control form-control-lg" required/>
+                            <label class="form-label" for="form1Example13">Email address</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="password" name="password" class="form-control form-control-lg" required/>
+                            <label class="form-label" for="form1Example23">Password</label>
+                        </div>
+
+                        <div class="d-flex justify-content-around align-items-center mb-4">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked/>
+                                <label class="form-check-label" for="form1Example3"> Remember me </label>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up</button>
+
+                        <div class="d-flex align-items-center my-4">
+                            <p class="text-inverse text-center">Already have an Account? <a href="https://shinon.altervista.org/MyProject/frontend/login/index.html" data-abc="true">Sign In</a></p>
+                        </div>
+
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                        </div>
+
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #983b43" href="https://shinon.altervista.org/MyProject/oauth_google.php" role="button">
+                            <i class="fab fa-google me-2"></i>Continue with Google
+                        </a>
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #1b1a55" href="https://shinon.altervista.org/MyProject/register_paleoid.php" role="button">
+                            <i class="fa fa-product-hunt me-2"></i>Continue with PaleoID
+                        </a>
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!" role="button">
+                            <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+                        </a>
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!" role="button">
+                            <i class="fab fa-twitter me-2"></i>Continue with Twitter
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="../mbd/js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
